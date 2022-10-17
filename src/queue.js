@@ -43,10 +43,6 @@ class Queue {
       return head;
   }
 }
-const queue = new Queue();
-console.log(queue)
-queue.enqueue(1);
-console.log(queue)
 
 module.exports = {
   Queue
