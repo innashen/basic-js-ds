@@ -23,17 +23,9 @@ class Queue {
       return this.head
   }
 
- enqueue(value) {
-    if (this.length === 0) {
-      this.head = new ListNode(value);
-    } else {
-      let curr = this.head;
-      while (curr.next) {
-        curr = curr.next;
-      }
-      curr.next = new ListNode(value);
-    }
-    this.length ++
+ enqueue(/* value */) {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
   }
 
   dequeue() {
