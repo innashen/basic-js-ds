@@ -27,11 +27,11 @@ class Queue {
   enqueue(value) {
       const enq = new ListNode(value);
       if(this.head) {
-          this.tail.next = enq;
-          this.tail = enq;
+          this.end.next = enq;
+          this.end = enq;
       } else {
           this.head = enq;
-          this.tail = enq;
+          this.end = enq;
       }
       this.length++
   }
