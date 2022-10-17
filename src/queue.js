@@ -24,17 +24,7 @@ class Queue {
       return this.head
   }
 
-  enqueue(value) {
-      const enq = new ListNode(value);
-      if(this.head) {
-          this.end.next = enq;
-          this.end = enq;
-      } else {
-          this.head = enq;
-          this.end = enq;
-      }
-      this.length++
-  }
+ 
 
   dequeue() {
       let head = this.head.value;
